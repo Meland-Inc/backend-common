@@ -1,0 +1,50 @@
+{
+  "name": "@ICodeWorld-Inc/backend-common",
+  "version": "0.0.1",
+  "description": "ICW 后端nestjs 公共模块",
+  "main": "dist",
+  "module": "dist/esm",
+  "repository": {
+    "url": "git@github.com:ICodeWorld-Inc/backend-common.git",
+    "type": "github"
+  },
+  "author": "Albert",
+  "license": "MIT",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com",
+    "access": "restricted"
+  },
+  "scripts": {
+    "format": "prettier --write \"src/**/*.ts\" \"test.ts\"",
+    "build": "rm -rf ./dist && yarn build:cjs && yarn build:esm",
+    "build:cjs": "tsc --module commonjs --target es5 --outDir dist",
+    "build:esm": "tsc --module es2015 --target es5 --outDir dist/esm",
+    "prepublish": "yarn build"
+  },
+  "dependencies": {
+    "@nestjs/common": "^8.0.1",
+    "@nestjs/graphql": "^8.0.2",
+    "@nestjs/jwt": "^8.0.0",
+    "@nestjs/passport": "^8.0.0",
+    "@types/passport-jwt": "^3.0.6",
+    "express": "^4.17.1",
+    "graphql": "^15.5.1",
+    "passport-jwt": "^4.0.0"
+  },
+  "devDependencies": {
+    "@apollo/gateway": "^0.33.0",
+    "@nestjs/core": "^8.0.1",
+    "apollo-server-core": "^2.25.2",
+    "prettier": "^2.3.2",
+    "rxjs": "^7.2.0",
+    "ts-morph": "^11.0.3",
+    "typescript": "^4.3.5"
+  },
+  "peerDependencies": {
+    "ts-morph": "^11.0.3",
+    "@apollo/gateway": "^0.33.0",
+    "@nestjs/core": "^8.0.1",
+    "apollo-server-core": "^2.25.2",
+    "rxjs": "^7.2.0"
+  }
+}
