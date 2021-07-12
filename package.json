@@ -1,6 +1,6 @@
 {
   "name": "@ICodeWorld-Inc/backend-common",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "ICW 后端nestjs 公共模块",
   "main": "dist",
   "module": "dist/esm",
