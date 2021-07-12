@@ -1,0 +1,18 @@
+aliases:
+  test-approvers:
+    - HongjiangHuang
+    - flyingpig-zzy
+    - KyrieZheng
+
+  devops-approvers:
+    - HongjiangHuang
+    - flyingpig-zzy
+    - KyrieZheng
+
+  typescript-approvers:
+    - HongjiangHuang
+
+  all-reviewers:
+    - HongjiangHuang
+    - flyingpig-zzy
+    - KyrieZheng

@@ -1,0 +1,5 @@
+approvers:
+  - typescript-approvers
+
+reviewers:
+  - all-reviewers
